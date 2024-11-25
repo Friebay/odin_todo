@@ -5,8 +5,9 @@ module.exports = {
   mode: 'development',
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+    clean: true // Clean the dist folder before each build
   },
   module: {
     rules: [
